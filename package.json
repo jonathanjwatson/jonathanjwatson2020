@@ -1,0 +1,31 @@
+{
+  "name": "jonathanjwatson2020",
+  "version": "1.0.0",
+  "description": "Updated Personal Website for 2020",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"nodemon server.js\" \"cd client && npm run start\"",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanjwatson/jonathanjwatson2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonathanjwatson/jonathanjwatson2020/issues"
+  },
+  "homepage": "https://github.com/jonathanjwatson/jonathanjwatson2020#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2"
+  }
+}
