@@ -1,0 +1,20 @@
+nav {
+  background-color: #ffffff;
+}
+
+nav ul a {
+  color: #6284be;
+}
+
+nav .brand-logo {
+  color: #6284be;
+}
+
+nav .sidenav-trigger {
+  float: right;
+}
+@media only screen and (max-width: 600px) {
+  nav .brand-logo {
+    font-size: 1.5rem;
+  }
+}
