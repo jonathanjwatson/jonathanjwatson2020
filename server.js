@@ -9,11 +9,11 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
-app.get("/config", (req, res) => {
-  res.json("Config");
+app.get("/api/config", (req, res) => {
+  res.json({
+    success: true,
+  });
 });
-
 
 app.use(express.static(__dirname + "/client/build"));
 
