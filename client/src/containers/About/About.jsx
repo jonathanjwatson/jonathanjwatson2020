@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import Jwatson from "../../images/jwatson.jpg";
 import Skills from "../../components/Skills/Skills";
+import Resume from "../../components/Resume/Resume";
 
 const About = () => {
   return (
@@ -62,6 +63,7 @@ const About = () => {
           </div>
         </div>
         <Skills />
+        <Resume />
       </div>
     </div>
   );

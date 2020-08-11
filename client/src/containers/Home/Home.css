@@ -3,11 +3,13 @@
   height: 95vh;
 }
 
-#home-page h1,
-h2,
-h3 {
+#home-page h1 {
   color: #ffffff;
 }
+
+#home-page h3 {
+    color: #ffffff;
+  }
 
 #home-page .container {
   width: 90%;
