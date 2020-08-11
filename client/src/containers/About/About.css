@@ -1,0 +1,21 @@
+/* #about-page {
+  height: 90vh;
+} */
+
+#about-photo {
+  width: 18em;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  #about-photo {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #about-photo {
+    float: right;
+  }
+}

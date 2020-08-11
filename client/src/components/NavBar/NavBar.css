@@ -4,6 +4,8 @@ nav {
 
 nav ul a {
   color: #6284be;
+  font-size: 1.2em;
+  margin: 0 2vw;
 }
 
 nav .brand-logo {
@@ -18,3 +20,8 @@ nav .sidenav-trigger {
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 992px) {
+    nav .brand-logo {
+      margin-left: 2.5rem;
+    }
+  }
