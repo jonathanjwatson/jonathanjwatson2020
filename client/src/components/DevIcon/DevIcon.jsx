@@ -6,7 +6,7 @@ const DevIcon = ({ label, original, slug }) => {
   return (
     <div>
       <i
-        class={`devicon-${slug}-${original ? "original" : "plain"} ${
+        className={`devicon-${slug}-${original ? "original" : "plain"} ${
           plain ? null : "colored"
         }`}
         onMouseEnter={() => {

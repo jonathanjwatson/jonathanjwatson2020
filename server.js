@@ -15,6 +15,10 @@ app.get("/api/config", (req, res) => {
   });
 });
 
+app.get("/api/resume", (req, res) => {
+  res.sendFile(path.join(__dirname + "/files/Jwatson-2020.pdf"));
+});
+
 app.use(express.static(__dirname + "/client/build"));
 
 app.get("*", (req, res) => {
