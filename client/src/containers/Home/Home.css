@@ -8,10 +8,21 @@
 }
 
 #home-page h3 {
-    color: #ffffff;
-  }
+  color: #ffffff;
+}
 
-#home-page .container {
-  width: 90%;
-  max-width: 100vw;
+@media only screen and (max-width: 600px) {
+  /* #home-page h1 {
+    font-size: 4.5rem;
+  } */
+  #home-page h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #home-page .container {
+    width: 90%;
+    max-width: 100vw;
+  }
 }

@@ -14,14 +14,18 @@ nav .brand-logo {
 
 nav .sidenav-trigger {
   float: right;
+  color: #5a5a5b;
 }
 @media only screen and (max-width: 600px) {
   nav .brand-logo {
     font-size: 1.5rem;
   }
+  #mobile-nav a{
+    color: #039be5;
+  }
 }
 @media only screen and (min-width: 992px) {
-    nav .brand-logo {
-      margin-left: 2.5rem;
-    }
+  nav .brand-logo {
+    margin-left: 2.5rem;
   }
+}

@@ -15,12 +15,9 @@ const Home = () => {
               cursor={{
                 show: false,
               }}
-              //   onCharacterTyped={function(character, charIdx){
-              //       debugger;
-              //   }}
             >
               <h3 className="center-align" style={{ letterSpacing: ".6vw" }}>
-                ENGINEER | ENTREPRENEUR | EDUCATOR
+                ENGINEER&nbsp;| ENTREPRENEUR&nbsp;| EDUCATOR
               </h3>
             </Typist>
           </div>
