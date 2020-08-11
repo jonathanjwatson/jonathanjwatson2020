@@ -20,7 +20,7 @@ const Home = () => {
               //   }}
             >
               <h3 className="center-align" style={{ letterSpacing: ".6vw" }}>
-                ENGINEER | EDUCATOR | ENTREPRENEUR
+                ENGINEER | ENTREPRENEUR | EDUCATOR
               </h3>
             </Typist>
           </div>
