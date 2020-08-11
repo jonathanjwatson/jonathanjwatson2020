@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import Jwatson from "../../images/jwatson.jpg";
+import Skills from "../../components/Skills/Skills";
 
 const About = () => {
   return (
@@ -60,6 +61,7 @@ const About = () => {
             </p>
           </div>
         </div>
+        <Skills />
       </div>
     </div>
   );

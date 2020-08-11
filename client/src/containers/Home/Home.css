@@ -1,6 +1,11 @@
 #home-page {
-  background: linear-gradient(-45deg, #ed6137, #dc2169, #0c9fd5, #1a9d7e);
+  background: linear-gradient(-45deg, #bb4927, #a71d52, #039be5, #1a9d4e);
   height: 95vh;
+}
+
+#home-page h1,
+h2,
+h3 {
   color: #ffffff;
 }
 

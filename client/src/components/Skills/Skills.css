@@ -1,0 +1,18 @@
+.development-icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: .5em;
+}
+
+.development-icons i {
+    width: 1.8em;
+    font-size: 4em;
+    padding: .3em;
+    margin: 0 auto;
+}
