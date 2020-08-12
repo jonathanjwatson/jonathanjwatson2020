@@ -13,3 +13,12 @@
   height: 4.1rem;
   transition: 0.5s ease-in-out;
 }
+@media only screen and (max-width: 600px) {
+  .footer-icon {
+    height: 1.5rem;
+  }
+
+  .footer-icon:hover {
+    height: 1.6rem;
+  }
+}
