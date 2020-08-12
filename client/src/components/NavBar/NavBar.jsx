@@ -29,7 +29,7 @@ const NavBar = () => {
       }}
     >
       <NavItem href="/about">About</NavItem>
-      <NavItem href="/projects">Projects</NavItem>
+      <NavItem href="/portfolio">Portfolio</NavItem>
       <NavItem href="/contact">Contact</NavItem>
     </Navbar>
   );

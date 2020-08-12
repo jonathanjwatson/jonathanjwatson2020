@@ -3,7 +3,7 @@ import FAIcon from "../../components/FAIcon/FAIcon";
 
 const Resume = () => {
   return (
-    <div className="row">
+    <div className="row" style={{marginBottom: "5em"}}>
       <div className="col s12 center-align">
         <h3>Resume</h3>
         <a

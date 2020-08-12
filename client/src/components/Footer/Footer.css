@@ -1,0 +1,15 @@
+.page-footer {
+  background-color: #5a5a5b;
+}
+
+.footer-icon {
+  color: #ffffff;
+  height: 4rem;
+  transition: 0.5s ease-in-out;
+}
+
+.footer-icon:hover {
+  color: #039be5;
+  height: 4.1rem;
+  transition: 0.5s ease-in-out;
+}
