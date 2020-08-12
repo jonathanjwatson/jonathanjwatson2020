@@ -19,14 +19,27 @@ const Projects = () => {
           title="Sky Retro"
           description="Sky Retro is a customizable retrospective tool for developers, by
             developers."
-          technologies={["React", "WebSockets", "Express", "MongoDB"]}
+          technologies={[
+            "React",
+            "JavaScript",
+            "WebSockets",
+            "Express",
+            "MongoDB",
+          ]}
           liveSiteUrl="https://www.skyretro.com"
         />
         <SingleProject
           image={Deluxe}
           title="Deluxe Rewards"
           description="Deluxe Rewards is a white-label application that allows companies to offer loyalty programs to their customers. I worked on updating existing site features and creating new functionality based on business requests."
-          technologies={["React", "Java", "SpringBoot", "SQL"]}
+          technologies={[
+            "React",
+            "JavaScript",
+            "SCSS",
+            "Java",
+            "SpringBoot",
+            "SQL",
+          ]}
         />
         <SingleProject
           image={HaulMi}
