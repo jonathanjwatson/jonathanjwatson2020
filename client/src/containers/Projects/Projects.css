@@ -1,0 +1,19 @@
+.single-project {
+  background-color: rgba(73, 103, 139, 0.05);
+  transition: 0.5s ease-in-out;
+  padding-bottom: 2em;
+}
+
+.single-project:hover {
+  background-color: rgba(73, 103, 139, 0.15);
+}
+
+.project-description button {
+  margin: 0.2em 0.8em 0.5em 0;
+  padding: 0.2em 1em;
+  font-size: 0.9em;
+  color: #a71d52;
+  border: 0 solid rgba(167, 29, 82, 0.2);
+  background-color: rgba(167, 29, 82, 0.1);
+  border-radius: 100px;
+}
