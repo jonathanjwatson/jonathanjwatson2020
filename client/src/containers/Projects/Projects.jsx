@@ -4,6 +4,7 @@ import SingleProject from "../../components/SingleProject/SingleProject";
 import SkyRetro from "../../images/project-sky-retro.png";
 import HaulMi from "../../images/project-haul-mi.jpg";
 import Deluxe from "../../images/project-deluxe.png";
+import HomeDepot from "../../images/project-home-depot.png";
 
 const Projects = () => {
   return (
@@ -25,6 +26,7 @@ const Projects = () => {
             "WebSockets",
             "Express",
             "MongoDB",
+            "Heroku",
           ]}
           liveSiteUrl="https://www.skyretro.com"
         />
@@ -39,13 +41,28 @@ const Projects = () => {
             "Java",
             "SpringBoot",
             "SQL",
+            "Nginx",
+          ]}
+        />
+        <SingleProject
+          image={HomeDepot}
+          title="The Home Depot"
+          description="As a member of the Transportation team, part of the Supply Chain division at The Home Depot Marietta Technology Center, I built and maintained numerous internal applications. Our biggest 'built-from-scratch' application, VendorPlanEx was responsible for cutting transportation costs on bulk items by nearly 30%, a savings of millions of dollars per year."
+          technologies={[
+            "React",
+            "Express",
+            "JavaScript",
+            "Java",
+            "SpringBoot",
+            "PubSub",
+            "Google Cloud Platform",
           ]}
         />
         <SingleProject
           image={HaulMi}
           title="HaulMi"
           description="HaulMi is your friendly and trustworthy moving, delivery, and disposal company. I worked as one of the primary software engineers during the company's startup phase."
-          technologies={["React", "Express", "MongoDB"]}
+          technologies={["React", "Express", "MongoDB", "Heroku"]}
           liveSiteUrl="https://haulmi.com/"
         />
       </div>
