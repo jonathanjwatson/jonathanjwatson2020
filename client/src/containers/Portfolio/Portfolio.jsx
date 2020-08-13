@@ -6,15 +6,14 @@ import HaulMi from "../../images/project-haul-mi.jpg";
 import Deluxe from "../../images/project-deluxe.png";
 import HomeDepot from "../../images/project-home-depot.png";
 import HomeschoolHub from "../../images/project-homeschool-hub.png";
+import NavBarBright from "../../components/NavBarBright/NavBarBright";
 import Footer from "../../components/Footer/Footer";
 
 const Projects = () => {
   return (
     <>
-      <div
-        id="portfolio-page"
-        className="valign-wrapper"
-      >
+      <NavBarBright />
+      <div id="portfolio-page" className="valign-wrapper">
         <div className="container">
           <div className="row">
             <div className="col s12">

@@ -1,11 +1,11 @@
 import React from "react";
-import "./NavBar.css";
+import "./NavBarBright.css";
 import { NavLink } from "react-router-dom";
 import { Navbar, NavItem } from "react-materialize";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const NavBar = () => {
+const NavBarBright = () => {
   return (
     <Navbar
       alignLinks="right"
@@ -35,4 +35,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBarBright;

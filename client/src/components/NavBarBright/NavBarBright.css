@@ -1,0 +1,35 @@
+nav {
+  background: linear-gradient(-45deg, #bb4927, #a71d52, #039be5, #1a9d4e);
+}
+
+nav ul a {
+  color: #ffffff;
+  font-size: 1.2em;
+  margin: 0 2vw;
+}
+
+nav .brand-logo {
+  color: #ffffff;
+}
+
+nav .sidenav-trigger {
+  float: right;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .brand-logo {
+    font-size: 1.5rem;
+  }
+  #mobile-nav {
+    background: linear-gradient(-45deg, #bb4927, #a71d52, #039be5, #1a9d4e);
+  }
+  #mobile-nav a {
+    color: #ffffff;
+  }
+}
+@media only screen and (min-width: 992px) {
+  nav .brand-logo {
+    margin-left: 2.5rem;
+  }
+}

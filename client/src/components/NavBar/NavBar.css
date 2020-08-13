@@ -1,31 +1,32 @@
-nav {
-  background-color: #ffffff;
+#home-page nav {
+  background: #ffffff;
 }
 
-nav ul a {
+#home-page nav ul a {
   color: #039be5;
   font-size: 1.2em;
   margin: 0 2vw;
 }
 
-nav .brand-logo {
+#home-page nav .brand-logo {
   color: #039be5;
 }
 
-nav .sidenav-trigger {
+#home-page nav .sidenav-trigger {
   float: right;
   color: #5a5a5b;
 }
+
 @media only screen and (max-width: 600px) {
-  nav .brand-logo {
-    font-size: 1.5rem;
-  }
-  #mobile-nav a{
+  #home-page #mobile-nav a {
     color: #039be5;
+  }
+  #home-page #mobile-nav {
+    background: #ffffff;
   }
 }
 @media only screen and (min-width: 992px) {
-  nav .brand-logo {
+  #home-page nav .brand-logo {
     margin-left: 2.5rem;
   }
 }

@@ -4,10 +4,12 @@ import Jwatson from "../../images/jwatson.jpg";
 import Skills from "../../components/Skills/Skills";
 import Resume from "../../components/Resume/Resume";
 import Footer from "../../components/Footer/Footer";
+import NavBarBright from "../../components/NavBarBright/NavBarBright";
 
 const About = () => {
   return (
     <>
+      <NavBarBright />
       <div id="about-page" className="valign-wrapper">
         <div className="container">
           <div className="row">
