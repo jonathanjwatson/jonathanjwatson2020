@@ -1,3 +1,7 @@
+#portfolio-page{
+    margin-bottom: 5em;
+}
+
 .single-project {
   background-color: rgba(73, 103, 139, 0.05);
   transition: 0.5s ease-in-out;

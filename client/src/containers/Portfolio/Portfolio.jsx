@@ -5,20 +5,20 @@ import SkyRetro from "../../images/project-sky-retro.png";
 import HaulMi from "../../images/project-haul-mi.jpg";
 import Deluxe from "../../images/project-deluxe.png";
 import HomeDepot from "../../images/project-home-depot.png";
+import HomeschoolHub from "../../images/project-homeschool-hub.png";
 import Footer from "../../components/Footer/Footer";
 
 const Projects = () => {
   return (
     <>
       <div
-        id="about-page"
+        id="portfolio-page"
         className="valign-wrapper"
-        style={{ marginBottom: "5em" }}
       >
         <div className="container">
           <div className="row">
             <div className="col s12">
-              <h3 className="center-align">Projects</h3>
+              <h3 className="center-align">Portfolio</h3>
             </div>
           </div>
           <SingleProject
@@ -49,6 +49,12 @@ const Projects = () => {
               "SQL",
               "Nginx",
             ]}
+          />
+          <SingleProject
+            image={HomeschoolHub}
+            title="Homeschool Hub"
+            description="Homeschool Hub is an online Learning Management System designed for parents and children. This is specifically designed for homeschoolers looking to track progress through courses, see assignments by category, and review grades."
+            technologies={["React", "Express", "JavaScript", "GraphQL"]}
           />
           <SingleProject
             image={HomeDepot}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./SingleProject.css";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
@@ -14,13 +15,13 @@ const SingleProject = ({
 }) => {
   return (
     <div className="row single-project">
-      <div className="col m4 project-image" style={{ marginTop: "3em" }}>
+      <div className="col m4 project-image">
         <a
           href="http://nasaimages.surge.sh/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={image} alt="Sky Retro" style={{ width: "100%" }} />
+          <img src={image} alt="Sky Retro" />
         </a>
       </div>
       <div className="col m8 single-project-right">
@@ -38,8 +39,8 @@ const SingleProject = ({
         <div className="project-description">
           <p>{description}</p>
           <p>Technologies:</p>
-          {technologies.map((technology) => (
-            <button>{technology}</button>
+          {technologies.map((technology, index) => (
+            <button key={index}>{technology}</button>
           ))}
           <div className="project-links">
             <div className="row">
