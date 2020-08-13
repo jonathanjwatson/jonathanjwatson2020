@@ -16,24 +16,24 @@ const SingleProject = ({
   return (
     <div className="row single-project">
       <div className="col m4 project-image">
-        <a
-          href="http://nasaimages.surge.sh/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        {liveSiteUrl ? (
+          <a href={liveSiteUrl} target="_blank" rel="noopener noreferrer">
+            <img src={image} alt="Sky Retro" />
+          </a>
+        ) : (
           <img src={image} alt="Sky Retro" />
-        </a>
+        )}
       </div>
       <div className="col m8 single-project-right">
         <div className="project-title">
           <h5>
-            <a
-              href="https://www.skyretro.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {title}
-            </a>
+            {liveSiteUrl ? (
+              <a href={liveSiteUrl} target="_blank" rel="noopener noreferrer">
+                {title}
+              </a>
+            ) : (
+              <>{title}</>
+            )}
           </h5>
         </div>
         <div className="project-description">
