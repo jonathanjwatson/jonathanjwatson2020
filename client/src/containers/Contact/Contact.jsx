@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NavBarBright from "../../components/NavBarBright/NavBarBright";
+import axios from "axios";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -7,6 +8,14 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    axios
+      .post("/api/mail", { email, message })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
