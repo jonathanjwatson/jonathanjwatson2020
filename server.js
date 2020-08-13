@@ -6,6 +6,8 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
+const MailController = require("./controllers/mailController");
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -15,9 +17,7 @@ app.get("/api/config", (req, res) => {
   });
 });
 
-app.get("/api/resume", (req, res) => {
-  res.sendFile(path.join(__dirname + "/files/Jwatson-2020.pdf"));
-});
+app.use(MailController);
 
 app.use(express.static(__dirname + "/client/build"));
 
