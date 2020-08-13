@@ -19,7 +19,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col s8 offset-s2">
+          <div className="col m8 offset-m2 s12">
             <form onSubmit={handleSubmit}>
               <div className="row">
                 <div className="input-field col s12">
@@ -35,8 +35,8 @@ const Contact = () => {
                   <label htmlFor="email">Your Email Address</label>
                 </div>
               </div>
-              <div class="row">
-                <div class="input-field col s12">
+              <div className="row">
+                <div className="input-field col s12">
                   <textarea
                     id="message"
                     name="message"
