@@ -20,7 +20,7 @@ router.post("/api/mail", (req, res) => {
     to: process.env.MY_EMAIL_ADDRESS,
     subject: `Message from ${req.body.email}`,
     // text: text, //, // plaintext body
-    html: `req.body.message`,
+    html: `${req.body.message}`,
   };
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
