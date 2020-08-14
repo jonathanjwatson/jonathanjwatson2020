@@ -6,9 +6,11 @@ const Contact = () => {
   const [email, setEmail] = useState({ value: "", error: "" });
   const [message, setMessage] = useState("");
   const [response, setResponse] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     let validEmail = new RegExp(
       /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
@@ -22,9 +24,11 @@ const Contact = () => {
           setEmail({ value: "", error: "" });
           setMessage("");
           setResponse(response.data.message);
+          setIsLoading(false);
         })
         .catch((err) => {
           setResponse(err.response.data.message);
+          setIsLoading(false);
         });
     }
   };
@@ -87,6 +91,7 @@ const Contact = () => {
                   <button
                     className="btn waves-effect waves-light"
                     type="submit"
+                    disabled={isLoading}
                   >
                     Send
                   </button>
