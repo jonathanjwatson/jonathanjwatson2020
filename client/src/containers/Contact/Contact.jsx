@@ -3,19 +3,30 @@ import NavBarBright from "../../components/NavBarBright/NavBarBright";
 import axios from "axios";
 
 const Contact = () => {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState({ value: "", error: "" });
   const [message, setMessage] = useState("");
+  const [response, setResponse] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios
-      .post("/api/mail", { email, message })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+
+    let validEmail = new RegExp(
+      /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    ).test(email.value);
+    if (!validEmail) {
+      setEmail({ ...email, error: "Please enter a valid email address." });
+    } else {
+      axios
+        .post("/api/mail", { email: email.value, message })
+        .then((response) => {
+          setEmail({ value: "", error: "" });
+          setMessage("");
+          setResponse(response.data.message);
+        })
+        .catch((err) => {
+          setResponse(err.response.data.message);
+        });
+    }
   };
 
   return (
@@ -28,6 +39,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="row">
+          <div className="col s12 center">
+            <h5 style={{ color: "#a71d52" }}>{response}</h5>
+          </div>
+        </div>
+        <div className="row">
           <div className="col m8 offset-m2 s12">
             <form onSubmit={handleSubmit}>
               <div className="row">
@@ -36,12 +52,20 @@ const Contact = () => {
                     id="email"
                     type="text"
                     name="email"
-                    value={email}
+                    value={email.value}
                     onChange={(e) => {
-                      setEmail(e.target.value);
+                      setEmail({ ...email, value: e.target.value });
                     }}
                   />
                   <label htmlFor="email">Your Email Address</label>
+                  <span
+                    className="helper-text"
+                    data-error="wrong"
+                    data-success="right"
+                    style={{ color: "#a71d52" }}
+                  >
+                    {email.error}
+                  </span>
                 </div>
               </div>
               <div className="row">

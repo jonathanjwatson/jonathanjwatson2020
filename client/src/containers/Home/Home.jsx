@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div id="home-page">
       <NavBar />
-      <div className="valign-wrapper">
+      <div id="home-page-content">
         <div className="container">
           <div className="row">
             <div className="col s12">
