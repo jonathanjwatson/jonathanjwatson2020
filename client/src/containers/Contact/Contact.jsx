@@ -17,6 +17,7 @@ const Contact = () => {
     ).test(email.value);
     if (!validEmail) {
       setEmail({ ...email, error: "Please enter a valid email address." });
+      setIsLoading(false);
     } else {
       axios
         .post("/api/mail", { email: email.value, message })
