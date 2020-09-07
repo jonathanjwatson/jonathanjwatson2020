@@ -29,6 +29,7 @@ const NavBar = () => {
       }}
     >
       <NavItem href="/about">About</NavItem>
+      <NavItem href="/speaking-and-training">Speaking and Training</NavItem>
       <NavItem href="/portfolio">Portfolio</NavItem>
       <NavItem href="/contact">Contact</NavItem>
     </Navbar>

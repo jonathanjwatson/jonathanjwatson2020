@@ -6,6 +6,7 @@ import About from "./containers/About/About";
 import Portfolio from "./containers/Portfolio/Portfolio";
 import Contact from "./containers/Contact/Contact";
 import NoMatch from "./containers/NoMatch/NoMatch";
+import SpeakingAndTraining from "./containers/SpeakingAndTraining/SpeakingAndTraining";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/speaking-and-training" component={SpeakingAndTraining} />
         <Route component={NoMatch} />
       </Switch>
     </Router>
