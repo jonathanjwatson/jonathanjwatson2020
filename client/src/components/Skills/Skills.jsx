@@ -22,7 +22,7 @@ const Skills = () => {
           <DevIcon slug="html5" label="HTML 5" />
           <DevIcon slug="java" label="Java" />
 
-          <DevIcon slug="javascript" label="JavaSript" />
+          <DevIcon slug="javascript" label="JavaScript" />
           <DevIcon slug="jquery" label="jQuery" />
           <DevIcon slug="mongodb" label="Mongo DB" />
           <DevIcon slug="mysql" label="MySQL" />
