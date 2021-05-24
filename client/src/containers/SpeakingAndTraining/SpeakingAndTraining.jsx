@@ -39,7 +39,11 @@ const SpeakingAndTraining = () => {
         <div className="row">
           <div className="col m4">
             <h5 className="center-align">GitHub</h5>
-            <a href="https://github.com/jonathanjwatson" target="_blank">
+            <a
+              href="https://github.com/jonathanjwatson"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="https://res.cloudinary.com/pictureswarm/image/upload/v1599443828/JonathanJWatson/GitHub.png"
                 alt="GitHub Screenshot"
@@ -51,6 +55,7 @@ const SpeakingAndTraining = () => {
             <a
               href="https://www.youtube.com/channel/UCCDmcwZ1DBlFzDoRcTnoLDw"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src="https://res.cloudinary.com/pictureswarm/image/upload/v1599443828/JonathanJWatson/YouTube.png"
@@ -60,7 +65,11 @@ const SpeakingAndTraining = () => {
           </div>
           <div className="col m4">
             <h5 className="center-align">Medium</h5>
-            <a href="https://medium.com/me/stories/public" target="_blank">
+            <a
+              href="https://medium.com/me/stories/public"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="https://res.cloudinary.com/pictureswarm/image/upload/v1599443828/JonathanJWatson/Medium.png"
                 alt="Medium Screenshot"

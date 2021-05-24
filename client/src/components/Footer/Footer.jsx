@@ -13,12 +13,12 @@ const Footer = () => {
               href="https://www.linkedin.com/in/jonathanjwatson"
               target="__blank"
             >
-              <FontAwesomeIcon icon={faLinkedin} class="footer-icon" />
+              <FontAwesomeIcon icon={faLinkedin} className="footer-icon" />
             </a>
           </div>
           <div className="col s1 ">
             <a href="https://github.com/jonathanjwatson/" target="__blank">
-              <FontAwesomeIcon icon={faGithub} class="footer-icon" />
+              <FontAwesomeIcon icon={faGithub} className="footer-icon" />
             </a>
           </div>
         </div>

@@ -2,23 +2,25 @@
   background-color: #5a5a5b;
 }
 
-.footer-icon {
+svg.footer-icon {
   color: #ffffff;
   height: 4rem;
+  width: 4rem!important;
   transition: 0.5s ease-in-out;
 }
 
-.footer-icon:hover {
+svg.footer-icon:hover {
   color: #039be5;
+  width: 4.1rem!important;
   height: 4.1rem;
   transition: 0.5s ease-in-out;
 }
 @media only screen and (max-width: 600px) {
-  .footer-icon {
+  svg.footer-icon {
     height: 1.5rem;
   }
 
-  .footer-icon:hover {
+  svg.footer-icon:hover {
     height: 1.6rem;
   }
 }
