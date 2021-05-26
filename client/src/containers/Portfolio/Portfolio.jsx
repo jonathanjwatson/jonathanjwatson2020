@@ -17,7 +17,7 @@ const Projects = () => {
         <div className="container">
           <div className="row">
             <div className="col s12">
-              <h3 className="center-align">Portfolio</h3>
+              <h1 className="center-align">Portfolio</h1>
             </div>
           </div>
           <SingleProject

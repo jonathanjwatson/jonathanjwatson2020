@@ -13,6 +13,7 @@ const Contact = () => {
     setIsLoading(true);
 
     let validEmail = new RegExp(
+      //eslint-disable-next-line
       /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
     ).test(email.value);
     if (!validEmail) {

@@ -14,7 +14,7 @@ const About = () => {
         <div className="container">
           <div className="row">
             <div className="col s12">
-              <h3 className="center-align">About Me</h3>
+              <h1 className="center-align">About Me</h1>
             </div>
           </div>
           <div className="row">
@@ -48,9 +48,15 @@ const About = () => {
               <p>
                 For me, the next step in helping others was to share this
                 passion officially as an Adjunct Instructor for Georgia Tech's
-                Professional Education program. Here, I teach the Fullstack Flex
-                program, encompassing MERN stack applications, Progressive Web
-                Apps, Object Oriented Programming design patterns, and more.
+                Professional Education program. I taught students as
+                part of the Fullstack Flex program, which encompasses MERN stack
+                applications, Progressive Web Apps, Object Oriented Programming
+                design patterns, and more.
+              </p>
+              <p>
+                Now, I help aspiring developers all over the world take their
+                next step with Jonathan Watson Web Development, my online
+                learning platform.
               </p>
               <p>
                 I live in the greater Atlanta area near the beautiful
